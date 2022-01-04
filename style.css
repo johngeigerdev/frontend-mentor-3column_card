@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-grey: hsl(0, 0%, 95%);    /*background, headings, and buttons*/
+}
+body,
+button{
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--very-light-grey);
+}
+h3{
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--very-light-grey);
+    line-height: 5rem;
+}
+p{
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+.btn-orange{
+    color: var(--bright-orange);
+}
+.btn-dark-cyan{
+    color: var(--dark-cyan);
+}
+.btn-very-dark-cyan{
+    color: var(--very-dark-cyan);
+}
+.btn{
+    padding: .7rem 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+}
+.bright-orange{
+    background-color: var(--bright-orange);
+    color: white;
+    border-radius: .6rem .6rem 0 0;
+}
+.dark-cyan{
+    background-color: var(--dark-cyan);
+    color: white;
+}
+.very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    color: white;
+    border-radius: 0 0 .6rem .6rem;
+}
+.container {
+    padding: 1.1rem;
+}
+.card {
+    padding: 2rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 992px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+        transition: all .3s ease-in-out;
+    }
+    .card {
+        height: 500px;
+    }
+    .btn {
+        margin: 7rem 0 0;
+    }
+    .bright-orange{
+        border-radius: 0.6rem 0 0 0.6rem;
+    }
+    .dark-cyan{
+        border-radius: 0;
+    }
+    .very-dark-cyan {
+        border-radius: 0 0.6rem 0.6rem 0;
+    }
+}
+@media (min-width: 1280px) {
+    .container{
+        max-width: 1200px;
+        transition: all .3s ease-in-out;
+    }
+    .card {
+        padding: 5rem;
+    }
+    .card p {
+        margin-bottom: 4rem;
+    }
+    .btn {
+        margin: 1.5rem 0 2.5rem;
+    }
+}
